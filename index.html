@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitLab CI/CD App</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GitLab CI/CD Node.js Application</h1>
+            <div class="status-badge">
+                <span id="status-text">Loading...</span>
+            </div>
+        </header>
+        
+        <main>
+            <section class="info-panel">
+                <h2>Application Info</h2>
+                <div class="info-content">
+                    <div class="info-row">
+                        <div class="info-label">Status:</div>
+                        <div class="info-value" id="app-status">Loading...</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">Message:</div>
+                        <div class="info-value" id="app-message">Loading...</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">Last Updated:</div>
+                        <div class="info-value" id="app-timestamp">Loading...</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="health-panel">
+                <h2>Health Check</h2>
+                <div class="health-status" id="health-status">
+                    <div class="spinner"></div>
+                    <span>Checking...</span>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Deployed via GitLab CI/CD Pipeline</p>
+        </footer>
+    </div>
+
+    <script src="/scripts.js"></script>
+</body>
+</html>
